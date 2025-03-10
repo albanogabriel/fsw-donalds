@@ -25,6 +25,9 @@ model Restaurant {
   orders         Order[]
   createdAt      DateTime       @default(now())
   updatedAt      DateTime       @updatedAt
+
+  // createdAt      DateTime       @default(now()) @map("created_at")
+  // updatedAt      DateTime       @updatedAt @map("updated_at")
 }
 
 model MenuCategory {
@@ -35,6 +38,8 @@ model MenuCategory {
   products     Product[]
   createdAt    DateTime   @default(now())
   updatedAt    DateTime   @updatedAt
+
+  // @@map("menu_category")
 }
 
 model Product {
