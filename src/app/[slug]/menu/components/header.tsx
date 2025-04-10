@@ -26,6 +26,7 @@ export default function RestaurantHeader({ restaurant }: RestaurantHeader) {
       >
         <ChevronLeftIcon />
       </Button>
+
       <Image
         src={restaurant?.coverImageUrl}
         fill
